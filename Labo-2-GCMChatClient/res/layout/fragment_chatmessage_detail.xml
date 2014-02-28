@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChatMessageDetailFragment" >
+               
+    <TextView
+        android:id="@+id/title"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp" />
+    
+    <EditText 
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="@string/send_to_hint"
+        android:inputType="text"
+		android:padding="12dp" />
+
+    <ListView
+        android:id="@+id/messages"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:layout_height="0dp"
+		android:divider="#00000000"
+		android:dividerHeight="0px" >
+    </ListView>
+    
+    <LinearLayout 
+        android:id="@+id/reply_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+        
+        <EditText android:id="@+id/reply_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint"
+            android:inputType="textMultiLine" />
+        
+        <Button android:id="@+id/reply"
+            android:text="@string/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+</LinearLayout>

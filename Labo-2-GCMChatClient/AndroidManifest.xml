@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.ugent.oomo.labo_2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
+    
+    <!-- TODO: Add permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="be.ugent.oomo.labo_2.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="be.ugent.oomo.labo_2.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+                
+        <activity
+            android:name=".ChatMessageListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ChatMessageDetailActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ChatMessageListActivity" >
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ChatContactListActivity" />
+        </activity>
+        
+        <provider
+            android:authorities="be.ugent.oomo.labo_2.contentprovider.message"
+            android:name=".contentprovider.MessageContentProvider"
+            android:exported="false">
+        </provider>
+        
+         <receiver 
+             android:name="be.ugent.oomo.labo_2.utilities.GcmBroadcastReceiver" 
+             android:permission="com.google.android.c2dm.permission.SEND" >
+             <intent-filter>
+                 <!-- Receives the actual messages. -->
+                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                 <category android:name="be.ugent.oomo.labo_2"/>
+             </intent-filter>
+         </receiver>
+         <service android:name="be.ugent.oomo.labo_2.utilities.GcmIntentService" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="@string/CRASHLYTICS_KEY"/>
+        
+    </application>
+
+</manifest>

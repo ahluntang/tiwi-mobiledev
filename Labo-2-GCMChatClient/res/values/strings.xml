@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Labo-2</string>
+    <string name="title_chatcontact_detail">ChatContact Detail</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="reply">Reply</string>
+    <string name="hint">Hello</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Server %1$s after %2$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Server %1$s (%2$s).</string>
+    <string name="device_not_supported_error">This device is not supported.</string>
+    <string name="google_play_service_error">Google Play Services must be installed.</string>
+    <string name="action_new_message">Send new message</string>
+    <string name="action_test">RECEIVE TEST</string>
+    <string name="to">To</string>
+    <string name="message">Message</string>
+    <string name="username">Username</string>
+    <string name="send_to_hint">To:</string>
+    <string name="new_message">New message</string>
+    <string name="login_title">Login</string>
+    <string name="contact_list_empty">No recent messages.</string>
+    <string name="selection_none">Select a contact message thread to show details or create new message from the options menu.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
