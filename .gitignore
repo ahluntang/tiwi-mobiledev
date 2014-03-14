@@ -70,3 +70,7 @@ apikeys.xml
 
 ## ignore crashlytics export strings
 com_crashlytics_export_strings.xml
+
+## ignore node_modules and public folder
+node_modules/
+public/

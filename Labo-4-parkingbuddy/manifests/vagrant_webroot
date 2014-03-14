@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+  ServerName app.local
+  DocumentRoot /vagrant/webroot
+  <Directory /vagrant/webroot>
+    DirectoryIndex index.php index.html
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+<VirtualHost *:80>
+  ServerName data.ahlun.be.dev
+  DocumentRoot /vagrant/webroot/data.ahlun.be/public
+  <Directory /vagrant/webroot/data.ahlun.be/public>
+    DirectoryIndex index.php index.html
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>

@@ -1,0 +1,68 @@
+#parkingresults ul {
+	padding: 10px;
+
+	li {
+		float: left;
+		width: 98%;
+		border: solid 1px #333333;
+		margin: 1%;
+
+
+		/* responsive sizes for article width */
+		@media only screen and (min-width : 468px) {
+			width: 48%;
+		}
+		
+		@media only screen and (min-width : 768px) {
+			width: 31.33%;
+		}
+		
+		@media only screen and (min-width : 1024px) {
+			width: 23%;
+		}
+		@media only screen and (min-width : 1200px) {
+			width: 17.88%;
+		}
+		/* /responsive sizes */
+
+		> * {
+			margin: 5px;
+			padding: 5px;
+		}
+
+		h2 {
+			font-size:1.2em;
+		}
+
+		.available, .available * {
+			color: green;
+			background-color: #CCFFCC;
+		}
+		.full, .full * {
+			color: red;
+			background-color: #FFCCCC;
+		}
+
+		.address, .distance * {
+			font-size: 0.9em;
+			color: gray;
+		}
+
+		.chart {
+			background-color: red;
+			height:2px;
+			padding:0;
+
+			.available {
+				background-color: green;
+				height:2px;
+				margin:0;
+			}
+		}
+	}
+
+	li.highlight {
+		background-color: #FFFFCC;
+	}
+
+}
