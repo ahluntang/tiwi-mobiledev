@@ -1,0 +1,13 @@
+header {
+  background: $header-background-color;
+  color: $header-foreground-color;
+  padding: $spacing;
+
+  h1 {
+    font: {
+      weight: $bold-font-weight;
+      size: $title-font-size;
+    }
+    text-transform: uppercase;
+  }
+}

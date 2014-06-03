@@ -1,0 +1,102 @@
+#results {
+  margin: $spacing $spacing / 2;
+
+  li {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@media (min-width: $column-width * 2 + 1) {
+  #results li {
+    width: 50%;
+  }
+}
+
+@media (min-width: $column-width * 3 + 1) {
+  #results li {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: $column-width * 4 + 1) {
+  #results li {
+    width: 25%;
+  }
+}
+
+#results .container {
+  border: {
+    width: $parking-border-width;
+    color: $parking-border-color;
+    style: solid;
+  }
+  padding: $spacing;
+  margin: 0 $spacing / 2 $spacing $spacing / 2;
+  background: $parking-background-color;
+
+  &.closed {
+    opacity: $closed-parking-opacity;
+  }
+
+  h2 {
+    font-weight: $bold-font-weight;
+  }
+}
+
+#results .nearest {
+  background-color: $nearest-parking-location-color;
+}
+
+.occupation {
+  margin: $spacing / 2 0 0 0;
+  width: 100%;
+  height: $parking-occupation-bar-height;
+  background: $available-color;
+
+  .bar {
+    background: $occupied-color;
+    height: $parking-occupation-bar-height;
+    float: right;
+  }
+}
+
+.capacity {
+  margin-bottom: $spacing / 2;
+  padding: $spacing / 4;
+  background: $available-tint;
+  color: $available-color;
+
+  .full & {
+    background: $occupied-tint;
+    color: $occupied-color;
+  }
+
+  strong {
+    font-weight: $bold-font-weight;
+  }
+
+  span {
+    font-size: $total-parking-capacity-font-size;
+    opacity: $total-parking-capacity-opacity;
+  }
+}
+
+.location {
+  font-size: $parking-location-font-size;
+
+  address {
+    color: $parking-location-color;
+  }
+}
+
+#no-results {
+  padding: 0 $spacing $spacing $spacing;
+  font-style: italic;
+  text-align: center;
+}

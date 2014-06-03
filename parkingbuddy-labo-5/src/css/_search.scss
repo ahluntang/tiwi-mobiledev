@@ -1,0 +1,13 @@
+#search-form {
+  background: $search-background-color;
+  color: $search-foreground-color;
+  padding: $spacing;
+}
+
+#search-field {
+  width: 100%;
+  box-sizing: border-box;
+  color: $search-field-foreground-color;
+  padding: $search-field-padding;
+  border: 0;
+}

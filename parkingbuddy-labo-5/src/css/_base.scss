@@ -1,0 +1,56 @@
+$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font-weight: 300;
+$base-font-size: 15px;
+$bold-font-weight: 700;
+
+$title-font-size: $base-font-size * 1.5;
+$total-parking-capacity-font-size: $base-font-size * 0.8;
+$parking-location-font-size: $base-font-size * 0.9;
+
+$spacing: $base-font-size;
+
+$search-field-padding: 0.5ex;
+$search-icon-size: 16px;
+$search-icon-margin: 4px;
+
+$directions-icon-size: 24px;
+
+$parking-border-width: 1px;
+
+$column-width: 220px;
+
+$parking-occupation-bar-height: $base-font-size / 5;
+
+$background-color: white;
+$foreground-color: #404040;
+
+$header-background-color: #0000CC;
+$header-foreground-color: white;
+
+$search-background-color: #F0F0F0;
+$search-foreground-color: $foreground-color;
+
+$search-field-background-color: white;
+$search-field-foreground-color: $foreground-color;
+
+$parking-border-color: #E0E0E0;
+
+$parking-background-color: white;
+$nearest-parking-background-color: #FFFFCC;
+
+$available-color: #009900;
+$occupied-color: #990000;
+$available-tint: scale-color($available-color, $alpha: -90%);
+$occupied-tint: scale-color($occupied-color, $alpha: -90%);
+
+$parking-location-color: scale-color($foreground-color, $alpha: -50%);
+$active-parking-location-color: scale-color($foreground-color, $alpha: -25%);
+$nearest-parking-location-color: #F7EAAB;
+
+$total-parking-capacity-opacity: 0.5;
+$closed-parking-opacity: 0.25;
+
+$directions-icon-opacity: 0.25;
+$active-directions-icon-opacity: 0.5;
+
+$transition-duration: 200ms;

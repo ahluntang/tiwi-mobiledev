@@ -1,0 +1,150 @@
+{
+  "Parkings11":{
+    "parkings":[
+      {
+        "timestamp":1391551637438,
+        "name":"P08",
+        "description":"Ramen",
+        "address":"Ramen 23,<br>9000 Gent",
+        "contactInfo":"Tel.: 09 266 29 70",
+        "openingHours":"24\/24 open",
+        "open":true,
+        "full":true,
+        "suggestedRGB":"#00ff00",
+        "totalCapacity":270,
+        "availableCapacity":"VOL",
+        "latitude":51.056,
+        "longitude":3.716,
+        "covered":true,
+        "activeRoute":[
+        ]
+      },
+      {
+        "timestamp":1391551637438,
+        "name":"P02",
+        "description":"Reep",
+        "address":"Seminariestraat 9,<br>9000 Gent",
+        "contactInfo":"Tel.: 09 266 29 50",
+        "openingHours":"24\/24 open",
+        "open":true,
+        "full":false,
+        "suggestedRGB":"#00ff00",
+        "totalCapacity":470,
+        "availableCapacity":"340",
+        "latitude":51.052,
+        "longitude":3.731,
+        "covered":true,
+        "activeRoute":[
+        ]
+      },
+      {
+        "timestamp":1391551637438,
+        "name":"P10",
+        "description":"Sint-Pietersplein",
+        "address":"Sint-Pietersplein 65,<br>9000 Gent",
+        "contactInfo":"Tel.: 09 266 29 60",
+        "openingHours":"24\/24 open",
+        "open":true,
+        "full":true,
+        "suggestedRGB":"#00ff00",
+        "totalCapacity":708,
+        "availableCapacity":"VOL",
+        "latitude":51.042,
+        "longitude":3.726,
+        "covered":true,
+        "activeRoute":[
+        ]
+      },
+      {
+        "timestamp":1391551637438,
+        "name":"P04",
+        "description":"Savaanstraat",
+        "address":"Savaanstraat 13,<br>9000 Gent",
+        "contactInfo":"Tel.: 09 266 29 40",
+        "openingHours":"24\/24 open",
+        "open":true,
+        "full":false,
+        "suggestedRGB":"#00ff00",
+        "totalCapacity":570,
+        "availableCapacity":"502",
+        "latitude":51.0486,
+        "longitude":3.7222,
+        "covered":true,
+        "activeRoute":[
+        ]
+      },
+      {
+        "timestamp":1391551637438,
+        "name":"P01",
+        "description":"Vrijdagmarkt",
+        "address":"Vrijdagmarkt 1,<br>9000 Gent",
+        "contactInfo":"Tel.: 09 266 29 00 <br> (permanentie)<br> Tel.: 09 266 29 01 <br> (tijdens kantooruren)",
+        "openingHours":"24\/24 open",
+        "open":true,
+        "full":false,
+        "suggestedRGB":"#00ff00",
+        "totalCapacity":642,
+        "availableCapacity":"439",
+        "latitude":51.057,
+        "longitude":3.726,
+        "covered":true,
+        "activeRoute":[
+          {
+            "longitude":"51.06733",
+            "latitude":"3.727"
+          },
+          {
+            "longitude":"51.06316",
+            "latitude":"3.72539"
+          },
+          {
+            "longitude":"51.06178",
+            "latitude":"3.72458"
+          },
+          {
+            "longitude":"51.05955",
+            "latitude":"3.72498"
+          },
+          {
+            "longitude":"51.057",
+            "latitude":"3.72835"
+          },
+          {
+            "longitude":"51.05635",
+            "latitude":"3.72819"
+          },
+          {
+            "longitude":"51.05633",
+            "latitude":"3.72709"
+          },
+          {
+            "longitude":"51.05677",
+            "latitude":"3.72707"
+          },
+          {
+            "longitude":"51.05703",
+            "latitude":"3.72647"
+          }
+        ]
+      },
+      {
+        "timestamp":1391551637438,
+        "name":"P07",
+        "description":"Sint-Michiels",
+        "address":"Sint-Michielsplein 8,<br>9000 Gent",
+        "contactInfo":"Tel.: 09 266 29 20",
+        "openingHours":"24\/24 open",
+        "open":true,
+        "full":false,
+        "suggestedRGB":"#00ff00",
+        "totalCapacity":450,
+        "availableCapacity":"VOL",
+        "latitude":51.053,
+        "longitude":3.719,
+        "covered":true,
+        "activeRoute":[
+        ]
+      }
+    ]
+  }
+}

@@ -13,13 +13,19 @@ module.exports = function(grunt) {
         src: '*',
         dest: dest,
         expand: true,
-        filter: ['isFile','!*.scss']
+        filter: 'isFile'
       },
       assets: {
         cwd: src + '/assets',
         src: '**',
         dest: dest + '/assets',
         expand: true
+      },
+      polyfills: {
+	cwd: src + '/js/polyfills',
+	src: '**',
+	dest: dest + '/js/polyfills',
+	expand: true
       },
       testdata: {
         cwd: src + '/test',
@@ -86,7 +92,7 @@ module.exports = function(grunt) {
     },
     concat: {
       dist: {
-        src: src + '/js/**/*.js',
+        src: src + '/js/*.js',
         dest: dest + '/js/app.js'
       }
     },
@@ -207,7 +213,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('preflight',   [ 'copy:root', 'copy:assets' ]);
+  grunt.registerTask('preflight',   [ 'copy:root', 'copy:assets', 'copy:polyfills' ]);
 
   grunt.registerTask('debug:html',  [ 'htmlmin' ]);
   grunt.registerTask('debug:css',   [ 'sass', 'autoprefixer' ]);
@@ -225,10 +231,11 @@ module.exports = function(grunt) {
   grunt.registerTask('build:dist',  [
                                       'clean',
                                       'preflight',
-                                      'dist:html', 'dist:css', 'dist:js'
+                                      'dist:html', 'dist:css', 'dist:js',
+                                      'appcache'
                                     ]);
 
-  grunt.registerTask('debug',       [ 'build:debug', 'express', 'watch' ]);
+  grunt.registerTask('debug',       [ 'build:debug', 'express', 'appcache', 'watch' ]);
   grunt.registerTask('dist',        [ 'build:dist' ]);
 
   grunt.registerTask('cordova:setup', [

@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'base';
+
+body {
+  font: {
+    family: $base-font-family;
+    weight: $base-font-weight;
+    size: $base-font-size;
+  }
+  background: $background-color;
+  color: $foreground-color;
+}
+
+#status {
+  padding: $spacing;
+}
+
+@import 'title';
+@import 'ui';

@@ -74,3 +74,20 @@ com_crashlytics_export_strings.xml
 ## ignore node_modules and public folder
 node_modules/
 public/
+
+
+## ignore daux.io
+/node_modules/
+
+/css
+/Gruntfile.js
+/img
+/index.php
+/js
+/less
+/libs
+/package.json
+
+/docs/config.json
+
+/composer.json
